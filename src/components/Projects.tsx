@@ -2,13 +2,13 @@ import HeadingStar from './HeadingStar';
 import {ArrowDiagonal} from './SVGs';
 import onstord from '../assets/images/onstord_preview.gif';
 import tobi from '../assets/images/tobi_preview.gif';
-import heartisan from '../assets/images/heartisan_preview.gif';
-import oculus from '../assets/images/oculus.gif';
+// import heartisan from '../assets/images/heartisan_preview.gif';
+// import oculus from '../assets/images/oculus.gif';
 import merch from '../assets/images/merch-store.gif';
 import medfest from '../assets/images/medfest.png';
 import mutual_gains from '../assets/images/mutual-gains.png';
-// import syncskills from '../assets/images/syncskills.png';
-// import oloja from '../assets/images/oloja.png';
+import syncskills from '../assets/images/syncskills.png';
+import oloja from '../assets/images/oloja.png';
 import {motion} from 'framer-motion';
 
 type Project = {
@@ -20,19 +20,19 @@ type Project = {
 };
 
 const data: Project[] = [
-  // {
-  //   imageSrc: syncskills,
-  //   title: 'SyncSkills',
-  //   description: 'Start a career in tech without having to code',
-  //   url: 'https://www.syncskills.com.au'
-  // },
-  // {
-  //   imageSrc: oloja,
-  //   title: 'Oloja HUB',
-  //   description:
-  //     'A dynamic AI enabled platform that bridges the gap between individuals, business and services where you can buy, sell and gain business education',
-  //   url: 'https://oloja.com.au'
-  // },
+  {
+    imageSrc: syncskills,
+    title: 'SyncSkills',
+    description: 'Start a career in tech without having to code',
+    url: 'https://www.syncskills.com.au'
+  },
+  {
+    imageSrc: oloja,
+    title: 'Oloja HUB',
+    description:
+      'A dynamic AI enabled platform that bridges the gap between individuals, business and services where you can buy, sell and gain business education',
+    url: 'https://oloja.com.au'
+  },
   {
     imageSrc: merch,
     title: 'Rhapsody Merch Store',
@@ -66,20 +66,20 @@ const data: Project[] = [
     description:
       'A web application for sharing educational resources between lectures and students',
     url: 'https://onstord-three.vercel.app'
-  },
-  {
-    imageSrc: heartisan,
-    title: 'Heartisan',
-    description:
-      'A web application for the ordering handyman services for repairs, rennovations and constructions',
-    url: 'https://heartisan-clients.vercel.app'
-  },
-  {
-    imageSrc: oculus,
-    title: 'Oculus',
-    description: 'A landing page for a commercial AI website',
-    url: 'https://oculus-sigma.vercel.app'
   }
+  // {
+  //   imageSrc: heartisan,
+  //   title: 'Heartisan',
+  //   description:
+  //     'A web application for the ordering handyman services for repairs, rennovations and constructions',
+  //   url: 'https://heartisan-clients.vercel.app'
+  // },
+  // {
+  //   imageSrc: oculus,
+  //   title: 'Oculus',
+  //   description: 'A landing page for a commercial AI website',
+  //   url: 'https://oculus-sigma.vercel.app'
+  // }
 ];
 
 const variants = {
