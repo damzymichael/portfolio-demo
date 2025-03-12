@@ -48,17 +48,17 @@ const data: Project[] = [
     url: 'https://store.tobicloset.com'
   },
   {
-    imageSrc: mutual_gains,
-    title: 'Mutual Gains',
-    description: 'Sign up to mutual gains to earn cash as you refer friends',
-    url: 'https://mutual-gains.damzymike.com/'
-  },
-  {
     imageSrc: medfest,
     title: 'Medfest Care',
     description:
       'Saving for medical bills, Discovering health facilities near you and getting help from charitable individuals in the MFC community',
     url: 'https://medfestcareng.vercel.app'
+  },
+  {
+    imageSrc: mutual_gains,
+    title: 'Mutual Gains',
+    description: 'Sign up to mutual gains to earn cash as you refer friends',
+    url: 'https://mutual-gains.damzymike.com/'
   },
   {
     imageSrc: onstord,
