@@ -9,6 +9,8 @@ import medfest from '../assets/images/medfest.png';
 import mutual_gains from '../assets/images/mutual-gains.png';
 import syncskills from '../assets/images/syncskills.png';
 import oloja from '../assets/images/oloja.png';
+import gofans from '../assets/images/gofans.png';
+import theoneybrand from '../assets/images/theoneybrand.png';
 import {motion} from 'framer-motion';
 
 type Project = {
@@ -26,12 +28,13 @@ const data: Project[] = [
     description: 'Start a career in tech without having to code',
     url: 'https://www.syncskills.com.au'
   },
+
   {
-    imageSrc: oloja,
-    title: 'Oloja HUB',
+    imageSrc: theoneybrand,
+    title: 'Theoney brand',
     description:
-      'A dynamic AI enabled platform that bridges the gap between individuals, business and services where you can buy, sell and gain business education',
-    url: 'https://oloja.com.au'
+      'E-commerce web application for the sale of shades and other accesories',
+    url: 'https://theoneybrand.netlify.app/'
   },
   {
     imageSrc: merch,
@@ -45,14 +48,14 @@ const data: Project[] = [
     title: 'Tobi Closet',
     description:
       'E-commerce web application for the sale of quality thrift clothing',
-    url: 'https://store.tobicloset.com'
+    url: 'https://tc-comm.vercel.app'
   },
   {
     imageSrc: medfest,
     title: 'Medfest Care',
     description:
       'Saving for medical bills, Discovering health facilities near you and getting help from charitable individuals in the MFC community',
-    url: 'https://medfestcareng.vercel.app'
+    url: 'https://portal.medfestng.com'
   },
   {
     imageSrc: mutual_gains,
@@ -61,11 +64,24 @@ const data: Project[] = [
     url: 'https://mutual-gains.damzymike.com/'
   },
   {
+    imageSrc: gofans,
+    title: 'God Of All Nations',
+    description: 'Official website for God of All Nations Ministry',
+    url: 'https://gofans.org'
+  },
+  {
     imageSrc: onstord,
     title: 'Onstord',
     description:
       'A web application for sharing educational resources between lectures and students',
     url: 'https://onstord-three.vercel.app'
+  },
+  {
+    imageSrc: oloja,
+    title: 'Oloja HUB',
+    description:
+      'A dynamic AI enabled platform that bridges the gap between individuals, business and services where you can buy, sell and gain business education',
+    url: 'https://oloja.com.au'
   }
   // {
   //   imageSrc: heartisan,
