@@ -11,6 +11,7 @@ import syncskills from '../assets/images/syncskills.png';
 import oloja from '../assets/images/oloja.png';
 import gofans from '../assets/images/gofans.png';
 import theoneybrand from '../assets/images/theoneybrand.png';
+import trian_energy from '../assets/images/trian-energy.png';
 import {motion} from 'framer-motion';
 
 type Project = {
@@ -28,7 +29,6 @@ const data: Project[] = [
     description: 'Start a career in tech without having to code',
     url: 'https://www.syncskills.com.au'
   },
-
   {
     imageSrc: theoneybrand,
     title: 'Theoney brand',
@@ -44,6 +44,13 @@ const data: Project[] = [
     url: 'https://merch-store.damzymike.com/'
   },
   {
+    imageSrc: trian_energy,
+    title: 'Trian energy',
+    description:
+      'Trian Petroleum & Energy Servicing Company Ltd. is an indigenous Nigerian company dedicated to delivering best-in-class oil and gas services',
+    url: 'https://trian-energy.vercel.app/'
+  },
+  {
     imageSrc: tobi,
     title: 'Tobi Closet',
     description:
@@ -55,7 +62,7 @@ const data: Project[] = [
     title: 'Medfest Care',
     description:
       'Saving for medical bills, Discovering health facilities near you and getting help from charitable individuals in the MFC community',
-    url: 'https://portal.medfestng.com'
+    url: 'https://portal.medfestcareng.com'
   },
   {
     imageSrc: mutual_gains,
