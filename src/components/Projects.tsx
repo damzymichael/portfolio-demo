@@ -12,6 +12,7 @@ import oloja from '../assets/images/oloja.png';
 import gofans from '../assets/images/gofans.png';
 import theoneybrand from '../assets/images/theoneybrand.png';
 import trian_energy from '../assets/images/trian-energy.png';
+import bookstore from '../assets/images/bookstore.png';
 import {motion} from 'framer-motion';
 
 type Project = {
@@ -37,6 +38,13 @@ const data: Project[] = [
     url: 'https://theoneybrand.netlify.app/'
   },
   {
+    imageSrc: medfest,
+    title: 'Medfest Care',
+    description:
+      'Saving for medical bills, Discovering health facilities near you and getting help from charitable individuals in the MFC community',
+    url: 'https://portal.medfestcareng.com'
+  },
+  {
     imageSrc: merch,
     title: 'Rhapsody Merch Store',
     description:
@@ -51,6 +59,13 @@ const data: Project[] = [
     url: 'https://trian-energy.vercel.app/'
   },
   {
+    imageSrc: oloja,
+    title: 'Oloja HUB',
+    description:
+      'A dynamic AI enabled platform that bridges the gap between individuals, business and services where you can buy, sell and gain business education',
+    url: 'https://oloja.com.au'
+  },
+  {
     imageSrc: tobi,
     title: 'Tobi Closet',
     description:
@@ -58,11 +73,11 @@ const data: Project[] = [
     url: 'https://tc-comm.vercel.app'
   },
   {
-    imageSrc: medfest,
-    title: 'Medfest Care',
+    imageSrc: bookstore,
+    title: 'bookstore',
     description:
-      'Saving for medical bills, Discovering health facilities near you and getting help from charitable individuals in the MFC community',
-    url: 'https://portal.medfestcareng.com'
+      'Bookstore e-commerce application, view books according to category, add to cart and purchase books.',
+    url: 'https://bookstore-client-xi.vercel.app/'
   },
   {
     imageSrc: mutual_gains,
@@ -83,13 +98,7 @@ const data: Project[] = [
       'A web application for sharing educational resources between lectures and students',
     url: 'https://onstord-three.vercel.app'
   },
-  {
-    imageSrc: oloja,
-    title: 'Oloja HUB',
-    description:
-      'A dynamic AI enabled platform that bridges the gap between individuals, business and services where you can buy, sell and gain business education',
-    url: 'https://oloja.com.au'
-  },
+
   {
     imageSrc: heartisan,
     title: 'Heartisan',
