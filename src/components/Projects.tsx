@@ -70,7 +70,7 @@ const data: Project[] = [
     title: 'Tobi Closet',
     description:
       'E-commerce web application for the sale of quality thrift clothing',
-    url: 'https://tc-comm.vercel.app'
+    url: 'https://tc-comm-full.vercel.app'
   },
   {
     imageSrc: bookstore,
@@ -137,7 +137,7 @@ function Projects() {
             initial='initial'
             whileInView='animate'
             viewport={{once: true}}
-            custom={i}
+            custom={i}  
             className='project w-11/12 sm:w-[45%] max-w-[500px] bg-[#FFFFFF1A] rounded-lg overflow-hidden pb-3'
             key={i}
           >
