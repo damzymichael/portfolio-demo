@@ -56,7 +56,7 @@ const data: Project[] = [
     title: 'Trian energy',
     description:
       'Trian Petroleum & Energy Servicing Company Ltd. is an indigenous Nigerian company dedicated to delivering best-in-class oil and gas services',
-    url: 'https://trian-energy.vercel.app/'
+    url: 'https://trianenergy.com.ng/'
   },
   {
     imageSrc: oloja,
