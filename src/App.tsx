@@ -56,9 +56,10 @@ function App() {
 
       <main className='pt-16 sm:pt-0'>
         <section
-          className='hero-sec relative min-h-[100vh] px-3 md:px-10 flex flex-col sm:flex-row items-center justify-center overflow-hidden'
+          className='hero-sec min-h-[100vh] px-3 md:px-10 relative flex gap-10 md:gap-0 flex-col md:flex-row items-center md:justify-between overflow-hidden'
           id='home'
         >
+          {/* <div className='size-full absolute inset-0 z-0 backdrop-blur-sm' /> */}
           <Hero />
         </section>
 

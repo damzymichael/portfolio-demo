@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import posthog from 'posthog-js';
@@ -10,14 +10,16 @@ posthog.init(import.meta.env.VITE_POSTHOG_KEY, {
   person_profiles: 'identified_only'
 });
 
-//Production
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <PostHogProvider client={posthog}>
+  <Fragment>
+    {import.meta.env.MODE === 'development' ? (
       <App />
-    </PostHogProvider>
-  </React.StrictMode>
+    ) : (
+      <React.StrictMode>
+        <PostHogProvider client={posthog}>
+          <App />
+        </PostHogProvider>
+      </React.StrictMode>
+    )}
+  </Fragment>
 );
-
-//Development
-// ReactDOM.createRoot(document.getElementById('root')!).render(<App />);

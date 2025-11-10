@@ -48,23 +48,102 @@ export default memo(() => {
         </a>
       </motion.div>
       {/* Change pic to me popping out the box  */}
-      <motion.img
-        src={skater}
-        alt='Skater'
-        className='w-2/5 min-w-[350px] max-w-550px'
-        transition={{
-          duration: 0.3,
-          ease: [0, 0.71, 0.2, 1.01],
-          scale: {
-            type: 'spring',
-            damping: 5,
-            stiffness: 100,
-            restDelta: 0.001
-          }
-        }}
-        animate={{opacity: 1, scale: 1}}
-        initial={{opacity: 0, scale: 0.5}}
-      />
+      <motion.div className='relative aspect-square rounded-full overflow-hidden border border-[#9F40FE]'>
+        <motion.img
+          src={skater}
+          alt='Skater'
+          className='w-full aspect-square object-cover'
+          transition={{
+            duration: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+            scale: {
+              type: 'spring',
+              damping: 5,
+              stiffness: 100,
+              restDelta: 0.001
+            }
+          }}
+          animate={{opacity: 1, scale: 1}}
+          initial={{opacity: 0, scale: 0.5}}
+        />
+        <div className='size-[300px] lg:size-[320px] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute inset-0 overflow-hidden'>
+          <motion.svg
+            className='overflow-hidden size-[300px] lg:size-[320px]'
+            fill='transparent'
+            viewBox='0 0 400 400'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <motion.circle
+              cx='200'
+              cy='200'
+              r='220'
+              stroke='#9F40FE'
+              strokeWidth='4'
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              initial={{strokeDasharray: '24 10 0 0'}}
+              animate={{
+                strokeDasharray: ['15 120 25 25', '16 25 97 72', '4 250 22 22'],
+                rotate: [120, 360]
+              }}
+              transition={{
+                duration: 20,
+                repeat: Infinity,
+                repeatType: 'reverse'
+              }}
+            />
+          </motion.svg>
+        </div>
+      </motion.div>
+
+      {/* <div className='h-full w-full relative'>
+        <motion.div
+          initial={{opacity: 0}}
+          animate={{
+            opacity: 1,
+            transition: {delay: 2, duration: 0.4, ease: 'easeInOut'}
+          }}
+          className='py-8 lg:py-0'
+        >
+          <motion.div
+            initial={{opacity: 0}}
+            animate={{
+              opacity: 1,
+              transition: {delay: 2.4, duration: 0.4, ease: 'easeInOut'}
+            }}
+            className='w-[298px] absolute rounded-full h-[298px] xl:w-[320px] xl:h-[320px] mix-blend-lighten'
+          >
+            <img src={skater} alt='Skater' />
+          </motion.div>
+
+          <motion.svg
+            className='w-[300px] overflow-visible h-[300px] lg:w-[320px]  lg:h-[320px]'
+            fill='transparent'
+            viewBox='0 0 400 400'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <motion.circle
+              cx='200'
+              cy='200'
+              r='220'
+              stroke='#00ff99'
+              strokeWidth='4'
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              initial={{strokeDasharray: '24 10 0 0'}}
+              animate={{
+                strokeDasharray: ['15 120 25 25', '16 25 97 72', '4 250 22 22'],
+                rotate: [120, 360]
+              }}
+              transition={{
+                duration: 20,
+                repeat: Infinity,
+                repeatType: 'reverse'
+              }}
+            />
+          </motion.svg>
+        </motion.div>
+      </div> */}
 
       <aside className='absolute -bottom-5 max-h-14 w-screen'>
         <div className='marquee-section'>

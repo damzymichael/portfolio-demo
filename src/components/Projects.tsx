@@ -8,6 +8,7 @@ import merch from '../assets/images/merch-store.gif';
 import medfest from '../assets/images/medfest.png';
 import mutual_gains from '../assets/images/mutual-gains.png';
 import syncskills from '../assets/images/syncskills.png';
+// @ts-ignore
 import oloja from '../assets/images/oloja.png';
 import gofans from '../assets/images/gofans.png';
 import theoneybrand from '../assets/images/theoneybrand.png';
@@ -58,13 +59,13 @@ const data: Project[] = [
       'Trian Petroleum & Energy Servicing Company Ltd. is an indigenous Nigerian company dedicated to delivering best-in-class oil and gas services',
     url: 'https://trianenergy.com.ng/'
   },
-  {
-    imageSrc: oloja,
-    title: 'Oloja HUB',
-    description:
-      'A dynamic AI enabled platform that bridges the gap between individuals, business and services where you can buy, sell and gain business education',
-    url: 'https://oloja.com.au'
-  },
+  // {
+  //   imageSrc: oloja,
+  //   title: 'Oloja HUB',
+  //   description:
+  //     'A dynamic AI enabled platform that bridges the gap between individuals, business and services where you can buy, sell and gain business education',
+  //   url: 'https://oloja.com.au'
+  // },
   {
     imageSrc: tobi,
     title: 'Tobi Closet',
