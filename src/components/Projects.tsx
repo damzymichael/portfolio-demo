@@ -6,8 +6,8 @@ import heartisan from '../assets/images/heartisan_preview.gif';
 import oculus from '../assets/images/oculus.gif';
 import merch from '../assets/images/merch-store.gif';
 import medfest from '../assets/images/medfest.png';
-import mutual_gains from '../assets/images/mutual-gains.png';
 import syncskills from '../assets/images/syncskills.png';
+import collective_gains from '../assets/images/collective-gains.png';
 // @ts-ignore
 import oloja from '../assets/images/oloja.png';
 import gofans from '../assets/images/gofans.png';
@@ -30,6 +30,12 @@ const data: Project[] = [
     title: 'SyncSkills',
     description: 'Start a career in tech without having to code',
     url: 'https://www.syncskills.com.au'
+  },
+  {
+    imageSrc: collective_gains,
+    title: 'Collective Gains',
+    description: 'Sign up to mutual gains to earn cash as you refer friends',
+    url: 'https://www.collectivegains.com.ng/'
   },
   {
     imageSrc: theoneybrand,
@@ -81,12 +87,6 @@ const data: Project[] = [
     url: 'https://bookstore-client-xi.vercel.app/'
   },
   {
-    imageSrc: mutual_gains,
-    title: 'Collective Gains',
-    description: 'Sign up to mutual gains to earn cash as you refer friends',
-    url: 'https://mutual-gains.damzymike.com/'
-  },
-  {
     imageSrc: gofans,
     title: 'God Of All Nations',
     description: 'Official website for God of All Nations Ministry',
@@ -117,11 +117,7 @@ const data: Project[] = [
 
 const variants = {
   initial: {opacity: 0, y: 150},
-  animate: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {delay: index * 0.1}
-  })
+  animate: {opacity: 1, y: 0}
 };
 
 function Projects() {
@@ -138,7 +134,6 @@ function Projects() {
             initial='initial'
             whileInView='animate'
             viewport={{once: true}}
-            custom={i}  
             className='project w-11/12 sm:w-[45%] max-w-[500px] bg-[#FFFFFF1A] rounded-lg overflow-hidden pb-3'
             key={i}
           >
