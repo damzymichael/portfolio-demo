@@ -12,21 +12,21 @@ const textSection = {
   }
 };
 
-function usePrevious<T>(value: T) {
-  const ref = useRef<T>();
+// function usePrevious<T>(value: T) {
+//   const ref = useRef<T>();
 
-  useEffect(() => {
-    ref.current = value;
-  }, [value]);
+//   useEffect(() => {
+//     ref.current = value;
+//   }, [value]);
 
-  return ref.current;
-}
+//   return ref.current;
+// }
 
 // eslint-disable-next-line
 export default memo(() => {
   const animatedText = 'Transforming ideas into powerful software solutions';
-  const [state, setState] = useState(0);
-  const previous = usePrevious(state);
+  // const [state, setState] = useState(0);
+  // const previous = usePrevious(state);
   return (
     <>
       <motion.div
@@ -48,19 +48,19 @@ export default memo(() => {
           my web development portfolio and witness the power of innovation and
           creativity.
         </p>
-        <button
+        <a
           className='contact p-2 rounded-[50px] flex items-center gap-2 w-max'
-          onClick={() => setState(current => current + 1)}
-          // href='#contact-me'
+          // onClick={() => setState(current => current + 1)}
+          href='#contact-me'
         >
           <div className='w-10 h-10 rounded-full bg-[#FF9900]' />
           <div className='text-left text-sm pr-1'>
             <p className='font-semibold'>Email me</p>
             <p>damzymike@gmail.com</p>
-            <p>{previous}</p>
-            <p>{state}</p>
+            {/* <p>{previous}</p>
+            <p>{state}</p> */}
           </div>
-        </button>
+        </a>
       </motion.div>
       {/* Change pic to me popping out the box  */}
       <motion.div className='relative aspect-square rounded-full overflow-hidden border border-[#9F40FE]'>
