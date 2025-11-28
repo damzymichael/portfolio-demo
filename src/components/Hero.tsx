@@ -2,7 +2,8 @@ import {motion} from 'framer-motion';
 import skater from '../assets/images/hero-img.png';
 import Vector from '../assets/svgs/orange-star.svg';
 import TypingText from './TypingText';
-import {memo, useState, useRef, useEffect} from 'react';
+import { memo } from 'react';
+// import {memo, useState, useRef, useEffect} from 'react';
 
 const textSection = {
   hidden: {y: 40, opacity: 0},
